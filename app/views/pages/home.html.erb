@@ -1,0 +1,22 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<table>
+  <thead>
+  <tr>
+    <th>Record Type</th>
+    <th>Content</th>
+    <th>Created At</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @records.each do |record| %>
+    <tr>
+      <td><%= record.record_type %></td>
+      <td><%= record.content %></td>
+      <td><%= record.created_at %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
